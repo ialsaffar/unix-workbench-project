@@ -1,5 +1,3 @@
-all: README.md index.md
-
 README.md: guessinggame.sh
 	echo '# Unix Workbench Guessing Game' > README.md
 	echo '' >> README.md
@@ -14,6 +12,3 @@ README.md: guessinggame.sh
 	echo '### Author:' >> README.md
 	echo '' >> README.md
 	echo 'Ibrahim' >> README.md
-
-index.md: README.md
-	cat README.md > index.md
