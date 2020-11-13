@@ -2,11 +2,11 @@
 
 ### Date:
 
-Fri Nov 13 05:27:39 AM MSK 2020
+Fri Nov 13 05:41:52 AM MSK 2020
 
 ### Lines of code in gusssinggame.sh:
 
-27
+38
 
 ### Author:
 
