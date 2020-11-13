@@ -3,7 +3,7 @@
 
 win=0
 function where {
-    if [[ $1 -gt $( ls | wc -l ) ]]; then
+    if [[ $1 -gt $( ls -a | wc -l ) ]]; then
         echo 'you guessed too high'
     else
         echo 'you guessed too low'
@@ -11,11 +11,11 @@ function where {
 }
 
 echo 'Welcome to the Guessing Game!'
-echo 'Guess how many files are in the current directory:'
+echo 'Guess how many files (including hidden files and directories) are in the current directory:'
 
 while [[ win -eq 0 ]]; do
     read guess
-    if [[ $guess -eq $( ls | wc -l ) ]]; then
+    if [[ $guess -eq $( ls -a | wc -l ) ]]; then
         let win=1
         echo 'You got it!'
         echo 'Thanks for playing.'
